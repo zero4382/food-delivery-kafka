@@ -1,0 +1,21 @@
+{
+  "name": "food-delivery-kafka",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small runnable demo of real-time food delivery updates with Apache Kafka",
+  "main": "src/order-service.js",
+  "scripts": {
+    "start": "node src/order-service.js",
+    "setup": "node src/setup.js",
+    "customer": "SERVICE_NAME=customer GROUP_ID=customer-service node src/consumer.js",
+    "rider": "SERVICE_NAME=rider GROUP_ID=rider-service node src/consumer.js",
+    "notification": "SERVICE_NAME=notification GROUP_ID=notification-service node src/consumer.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "5.2.1",
+    "kafkajs": "2.2.4"
+  }
+}
