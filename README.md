@@ -89,6 +89,7 @@ docker compose down
 - `docker-compose.yml` - starts Kafka and all application services
 - `docs/architecture.md` - architecture and sequence diagrams
 - `docs/presentation-outline.md` - six-slide presentation plan
+- `docs/demo-guide-mm.md` - Burmese presentation and demo instructions
 
 ## API
 
